@@ -1,0 +1,10 @@
+<!--  -->
+<input
+  #busqueda
+  type="text"
+  [value]="initialValue"
+  placeholder={{textInput}}
+  class="form-control"
+  (keyup.enter)="emitBusqueda(busqueda.value)"
+  (keyup)="onKeyPress(busqueda.value)"
+>
